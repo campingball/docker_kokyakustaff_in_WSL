@@ -45,7 +45,7 @@
 
 <!-- <p>{{items}}</p> オブジェクトの中身を確認してみる-->
 
-<p>職員のコロナ予防接種情報を追加</p>
+<p>職員のコロナ予防接種情報を追加追加</p>
 <p>退職者は退職日を入力した時点で非表示機能追加→「退職者含む」ボタン押せば表示可機能追加</p>
             <p class="mt-5 mb-2">登録者一覧</p>
              <!--v-forを以下のタグに組み込んで受け取ったデータを表示させる  -->
@@ -60,7 +60,7 @@
                 <tr v-on:click="itemSelect(Stafflist)" v-for="Stafflist in list" v-bind:key="Stafflist.no"><!-- v-forとv-bindはセット利用必須 -->
                   <!-- v-forの記述によりlist[]に届いたデータがココに届いて表示が増えていく -->
                   <td>{{Stafflist.no}}</td>
-                  <!-- <td>{{Stafflist.name}}</td> -->
+             <!-- <td>{{Stafflist.name}}</td> -->
                   <td>{{Stafflist.kana}}</td>
                 </tr>
               </tbody>

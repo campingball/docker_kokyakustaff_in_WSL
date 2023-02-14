@@ -1,0 +1,16 @@
+version: "3.7"
+
+services:
+  test-app:
+    build: .
+    container_name: test-app
+    #restart: always
+    ports:
+      - "3000:3000"
+    volumes:
+    #- ./volumes_test_dir:/volume_dir
+    - "./:/var/www/html"
+    #左がホストOSのディレクトリ：右がコンテナ内のディレクトリ(linuxのシンボリックリンクと同様)
+    tty: true
+    
+ 
